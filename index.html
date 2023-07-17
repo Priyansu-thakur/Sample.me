@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Tutorial</title>
+    <script  src="index.js"></script>
+</head>
+<body>
+
+ <!-- <h1>string methods demo</h1>
+ <p>Repalce Result: <span id="replaceResult"></span></p>
+ <p>Replace All Result: <span id="replaceAllResult" ></span></p>
+ 
+ <script>
+
+var originalString = "Chandu ke chacha ne, Chandu ki chachi ko";
+
+//using replace( )
+var replacedString = originalString.replace("Chandu", "Rishu");
+
+//using replaceAll( )
+var replacedAllString = originalString.replaceAll ("C", "n");
+
+//displaying the result
+
+document.getElementById("replaceResult").textContent = replacedString;
+document.getElementById("replaceAllResult").textContent = replaceAllString;
+
+
+ </script> -->
+
+
+ <!-- //find Unicode and index of a string .  -->
+<!-- <h1>String Methods Demo</h1>
+<p>Original String: <span id="originalString"></span></p>
+<p>Character at index 2: <span id="charAtResult"></span>
+  <p>Unicode at index 2: <span id="charCodeAtResult"></span></p>
+</p>
+
+<script>
+var originalString = "Priyanshu_T" ;
+var index = 10;
+
+//using charAT( )
+var charAtResult = originalString.charAt(index);
+
+//using charCodeAt( )
+var charCodeAtResult = originalString.charCodeAt(index);
+
+
+
+//display Result
+document.getElementById("originalString").innerHTML = originalString;
+document.getElementById("charAtResult").innerHTML= charAtResult;
+document.getElementById("charCodeAtResult").innerHTML = charCodeAtResult;
+
+</script> -->
+
+<h1>Javascript Program</h1>
+
+<p id="demo"></p>
+<script>
+  class Join{
+    constructor(name, company, year){
+      this.name = name;
+      this.company = company;
+      this.year = year;
+    }
+    age( ){
+      const date = new Date();
+      return date.getFullYear() - this.year;
+    }
+  }
+  // const myJoin1 =  new Join("Priyanshu", "Wipro", 2014);
+  // const myJoin2 =  new Join("Rohan", "Sciex", 2023);
+  
+  const myJoin =  new Join ("Priyanshu", "Sciex" , 2018);
+  document.getElementById("demo").innerHTML = "I am " + myJoin.age( ) +myJoin.name( )+  "Working yet";
+  
+
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>String Methods Demo</title>
+</head>
+<body>
+<h1>String Methods Demo</h1>
+
+<p>Slice Result: <span id="sliceResult"></span></p>
+<p>Substring Result: <span id="substringResult"></span></p>
+<p>Substr Result: <span id="substrResult"></span></p>
+
+<script>
+var originalString = "0123456789asdfjkl";
+
+// Using slice()
+var slicedString = originalString.slice(7, 13);
+
+// Using substring()
+var substringedString = originalString.substring(0, 5);
+
+// Using substr()
+var substrString = originalString.substr(7, 6);
+
+// Displaying the results
+/*
+slice(start, end)
+substring(start, end)
+substr(start, length)
+*/
+document.getElementById("sliceResult").textContent = slicedString;
+document.getElementById("substringResult").textContent = substringedString;
+document.getElementById("substrResult").textContent = substrString;
+</script>
+</body>
+</html> -->
